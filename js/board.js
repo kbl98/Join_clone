@@ -705,13 +705,18 @@ function showProgressSubtasks(task,index){
     let width_progress=document.getElementById("progress-subtasks"+index);
     width_progress.style.width=width_done+"%";
     document.getElementById("progress-numb"+index).innerHTML=`${numb_done}/${number_subtasks}`
+    checkNoSubtasksDone(width_done,width_progress)
+    }else{
+        document.getElementById("progressbar"+index).classList.add("d-none")
+    }
+}
+
+
+function checkNoSubtasksDone(width_done,width_progress){
     if(width_done==0){
         width_progress.style.width="100%";
         width_progress.style.backgroundColor="white";
         width_progress.style.border="transparent";
-    }
-    }else{
-        document.getElementById("progressbar"+index).classList.add("d-none")
     }
 }
 
@@ -730,17 +735,17 @@ function renderSubtasks(index){
 
 function setCheckValue(index,i){
     if(loadedBoard[index]["subtasks"][i]["state"]=="done"){
-        document.getElementById("check"+index+i).setAttribute("checked",true)
+        document.getElementById("check"+index+i).setAttribute("checked","true")
     }
 }
 
 
 function checkSubtask(index,i){
-    let value_checkbox=document.getElementById("check"+index+i).checked;
-    if (value_checkbox==true){
-        loadedBoard[index]["subtasks"][i]["state"]="done"
+    let value_checkbox=document.getElementById("check"+index+i);
+    if (value_checkbox.checked){
+        loadedBoard[index]["subtasks"][i]["state"]="done";
     }else{
-        loadedBoard[index]["subtasks"][i]["state"]="todo"
+        loadedBoard[index]["subtasks"][i]["state"]="todo";
     }
 }
 
