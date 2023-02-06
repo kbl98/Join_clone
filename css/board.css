@@ -192,6 +192,32 @@ body {
     border-radius: 100px;
 }
 
+.progressbar{
+    margin-top:10px;
+    width:80%;
+    height:20px;
+    display:flex;
+    justify-content: flex-start;
+    border:solid 1px black;
+    border-radius: 15px;
+}
+
+.progress-subtasks{
+    background-color: blue;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.progress-numb{
+    color:rgb(196, 194, 194);
+    font-size:10px;
+}
+
+
+
 .task-footer {
     display: flex;
     justify-content: space-between;
@@ -537,6 +563,23 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+#subtask-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cont-subtask{
+    display:flex;
+    align-items: center;
+    
+}
+
+.check{
+    margin-right:10px;
 }
 
 
