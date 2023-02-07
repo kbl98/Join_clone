@@ -195,7 +195,7 @@ body {
 .progressbar{
     margin-top:10px;
     width:80%;
-    height:20px;
+    height:15px;
     display:flex;
     justify-content: flex-start;
     border:solid 1px black;
@@ -203,7 +203,7 @@ body {
 }
 
 .progress-subtasks{
-    background-color: blue;
+    background-color: rgb(21, 138, 188);
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -581,7 +581,9 @@ body {
 
 .check{
     margin-right:10px;
+    cursor: pointer;
 }
+
 
 
 @media (max-width: 1200px) {
