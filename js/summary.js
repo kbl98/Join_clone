@@ -543,33 +543,3 @@ function unhoverImportant(){
   removeVertivalup("progress");
   removeVertical("todo");
 }
-
-
-/*function hoverTaskCont(){
-  let tc=document.getElementById("task-overview");
-  tc.style.width="600px";
-  tc.style.height="110%"
-}
-
-function unhoverTaskCont(){
-  let tc=document.getElementById("task-overview");
-  tc.style.width="580px";
-  tc.style.height="100%";
-}
-
-
-function hoverEvent(){
-  let moveble=document.getElementsByClassName("move");
-  for(let i=0;i<moveble.length;i++){
-moveble[i].addEventListener("mouseover",(event) =>{
-  let tc=document.getElementById("task-overview");
-  tc.style.width="600px";
-  tc.style.height="110%"
-})
-moveble[i].addEventListener("mouseleave",(event)=>{
-  let tc=document.getElementById("task-overview");
-  tc.style.width="580px";
-  tc.style.height="100%";
-})
-  }
-}*/

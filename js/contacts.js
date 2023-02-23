@@ -315,7 +315,8 @@ function openNewContactTemp() {
                 <img class="create-contact-pp" src="./assets/img/contact_empty_pp.png" alt="">
 
                 <form onsubmit="createNewContact();return false" class="cont-create-contact-input">
-                    <input id="newContactNameValue" required placeholder="Vorname Nachname" pattern="[A-ZÄÜÖ][a-zäüö]* +[A-ZÄÜÖ][a-zäüö]*"  type="text" />
+                    <input id="newContactNameValue" required placeholder="Vorname Nachname" pattern="[A-ZÄÜÖ][a-zäüö]* +[A-ZÄÜÖ][a-zäüö]*"  type="text"  oninvalid="this.setCustomValidity('Please enter 1 firstname and 1 lastname with first letter capital!')"
+                    oninput="setCustomValidity('')"/>
                     <input id="newContactMailValue" required placeholder="Email" type="email" />
                     <input id="newContactPhoneValue" required placeholder="Phone" type="number" />
                     <div class="cont-create-contact-buttons">

@@ -157,7 +157,8 @@ function guestLogin() {
   current_user = {
     username: "Guest",
     email: "guest@guest.de",
-    color:"grey"
+    color:"grey",
+    img:"assets/img/guest_pic.svg"
   };
   setCurrentUserToLocal(current_user);
   getDemoSummary();

@@ -39,8 +39,9 @@ function resetUser() {
 /**function to set the user color as background head pic */
 function setUserImg() {
   if (current_user["img"]) {
+    console.log("user-img")
     document
-      .getElementById("user-img")
+      .getElementById("real-img")
       .setAttribute("src", current_user["img"]);
   } else {
     document.getElementById("real-img").classList.add("d-none");

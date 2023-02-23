@@ -45,6 +45,11 @@
   align-items: center;
 }
 
+#real-img{
+  width:50px;
+  height:50px;
+}
+
 #user-img:hover {
   cursor: pointer;
 }

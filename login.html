@@ -23,7 +23,7 @@
     <div id="login-container">
       <h1>Log In</h1>
       <div id="blue-line"></div>
-      <form onsubmit="getCurrentUser();return false" onclick="cleanLogin('mail-login','password-login')">
+      <form onsubmit="getCurrentUser();return false">
         <input onclick="event.stopPropagation()"
           id="mail-login"
           class="mail-input"
@@ -42,13 +42,6 @@
          />
       </div>
         <div class="help-container">
-          <!--<p
-            id="passwordlog-toggle"
-            class="password-toggle"
-            onclick="togglePassword('password-login','passwordlog-toggle')"
-          >
-            Passwort zeigen
-          </p>-->
           <div class="container-rember">
             <input id="rememberme" type="checkbox" checked="true" onclick="event.stopPropagation()"><p>Remember me</p> 
           </div>
