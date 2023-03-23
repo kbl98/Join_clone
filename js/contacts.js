@@ -20,7 +20,7 @@ function checkForColor() {
  * all funktions for load all contacts from backend and render them from here
  */
 async function initContacts() {
-    setURL('https://dr-katja-becker-lindhorst.developerakademie.net/smallest_backend_ever-master');
+    setURL('https://kbl-developement.de/smallest_backend_ever-master');
     await loadContactsFromBackend();
     checkForColor();
     renderContacts();
@@ -107,8 +107,6 @@ function splitName(fullName) {
     let lastName = nameParts[nameParts.length - 1];
     let bothFirstLetters = firstName.charAt(0) + lastName.charAt(0);
     return bothFirstLetters
-    // console.log(firstName); Output: "David"
-    // console.log(lastName); Output: "Eisenberg"
 }
 
 

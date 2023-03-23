@@ -30,10 +30,9 @@ function getLocalCurrentUser() {
  * function to load all tasks which are saved on the server
  */
 async function loadTasks() {
-  setURL('https://dr-katja-becker-lindhorst.developerakademie.net/smallest_backend_ever-master');
+  setURL('https://kbl-developement.de/smallest_backend_ever-master');
   await downloadFromServer();
   all_tasks = JSON.parse(backend.getItem('all_tasks')) || [];
-  console.log('Alle Aufgaben:', all_tasks);
 }
 
 

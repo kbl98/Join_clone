@@ -11,9 +11,10 @@ let mediaQuery = window.matchMedia('(max-width: 800px)');
 async function initSum() {
   await includeHTML();
   setURL(
-    "https://dr-katja-becker-lindhorst.developerakademie.net/smallest_backend_ever-master"
+    "https://kbl-developement.de/smallest_backend_ever-master"
   );
   await downloadFromServer();
+  console.log("OK");
   all_tasks = JSON.parse(backend.getItem("all_tasks"));
   if (!all_tasks) {
     all_tasks = [];

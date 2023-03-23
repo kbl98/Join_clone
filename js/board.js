@@ -5,7 +5,7 @@ let allradySet = false;
 
 
 async function initBoard() {
-    setURL('https://dr-katja-becker-lindhorst.developerakademie.net/smallest_backend_ever-master');
+    setURL('https://kbl-developement.de/smallest_backend_ever-master');
     await loadAllTaskFromBackend();
     await loadContactsFromBackend();
     await getCurrentUserFromStorage();
