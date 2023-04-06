@@ -638,9 +638,10 @@ function renderBoardTemp(color, category, title, description, date, priority, as
 
 function openBoardTaskTemp(color, category, title, description, date, priority, priorityColor, progress, index) {
     return `
-    <div class="cont-popup-board-task">
+    <div class="cont-popup-board-task"  onclick="event.stopPropagation()">
         <!--buttons-->
         <img onclick="saveOpenedTask()" class="popup-close" src="./assets/img/board_popup_close.png" alt="">
+       
         <button onclick="editPopupTask('${title}', '${description}', '${date}', '${index}')" class="popup-edit-button"><img src="./assets/img/board_popup_edit.png"
                 alt=""></button>
         <!--Head area-->

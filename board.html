@@ -34,11 +34,11 @@
     <div w3-include-html="./assets/templates/nav.html"></div>
 
     <!-- popup for tasks -->
-    <div id="boardPopupTask" class="popup-board-task-bgr d-none"></div>
+    <div id="boardPopupTask" class="popup-board-task-bgr d-none" onclick="saveOpenedTask()"></div>
     <!-- -------------------------------------------- -->
 
     <!-- popup for edit task -->
-    <div id="boardPopupTaskEdit" class="popup-board-task-bgr d-none">
+    <div id="boardPopupTaskEdit" class="popup-board-task-bgr d-none" onclick="cancleEditTask()">
       <div
         id="includeHTMLEdit"
         w3-include-html-edit-task="./assets/templates/board_edit_task.html"
@@ -47,7 +47,7 @@
     <!-- -------------------------------------------- -->
 
     <!-- popup add task board -->
-    <div id="popupAddTaskBoard" class="popup-board-task-bgr d-none">
+    <div id="popupAddTaskBoard" class="popup-board-task-bgr d-none" onclick="closeAddTaskBoard()">
       <div
         id="includeHTMLAdd"
         w3-include-html-add-task="./assets/templates/board_add_task.html"
